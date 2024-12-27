@@ -1,0 +1,260 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('Network\ &\ Telecommunications\ Services.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+}
+
+/* Dropdown styles */
+.menu .dropdown {
+    position: relative;
+}
+
+.menu .dropdown .arrow-down {
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+.menu .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none; /* Initially hidden */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.menu .dropdown-menu li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu .dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.menu .dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.menu .dropdown-menu li a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Show dropdown on hover */
+.menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* About Network Services */
+.about-network-services {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about-network-services h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.about-network-services p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Features Section */
+.network-features {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.network-features h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 2rem;
+}
+
+.features-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.feature-item {
+    flex: 1 1 calc(33% - 2rem);
+    max-width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-item h3 {
+    font-size: 1.25rem;
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Process Section */
+.network-process {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.network-process h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.step {
+    flex: 1 1 calc(20% - 1rem);
+    max-width: 300px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.step:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.step h3 {
+    font-size: 1.25rem;
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+}
+
+.step p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-list, .process-steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item, .step {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+}
+
+/* Success Stories Section */
+.success-stories {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.success-stories h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.success-stories p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.stories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.story-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.story-item img {
+    width: 100%;
+    height: auto;
+}
+
+.story-item h3 {
+    font-size: 1.25rem;
+    color: #007BFF;
+    margin: 1rem;
+}
+
+.story-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0 1rem 1rem;
+}

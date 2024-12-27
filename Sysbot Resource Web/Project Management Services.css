@@ -1,0 +1,267 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+}
+
+/* Dropdown styles */
+.menu .dropdown {
+    position: relative;
+}
+
+.menu .dropdown .arrow-down {
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+.menu .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none; /* Initially hidden */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.menu .dropdown-menu li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu .dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.menu .dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.menu .dropdown-menu li a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Show dropdown on hover */
+.menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* About Project Management Section */
+.about-project-management {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.about-project-management h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 2rem;
+}
+
+.about-project-management p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.8;
+}
+
+/* Services Offered Section */
+.services-offered {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.services-offered h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(33% - 2rem);
+    max-width: 300px;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item h3 {
+    font-size: 1.25rem;
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+}
+
+.service-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 2rem;
+}
+
+.reasons {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #555;
+}
+
+.reasons li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.reasons li::before {
+    content: '\2022';
+    color: #007BFF;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        flex: 1 1 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+    }
+}
+
+/* Project Portfolio Section */
+.project-portfolio {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.project-portfolio h2 {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+.project-portfolio p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.portfolio-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 300px;
+    height: 200px;
+}
+
+.portfolio-item h3 {
+    font-size: 1.25rem;
+    color: #007BFF;
+    margin: 1rem;
+}
+
+.portfolio-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0 1rem 1rem;
+}
